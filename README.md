@@ -8,12 +8,13 @@ In this case, `prisma-client-js` is used to connect from node, and `prisma-clien
 Wouldn't you be happy if you could share your schema in these cases?  
 
 ## Concept
-### Folders for schema management
+### Folders for schema management (`/prisma`)
 This folder is used to manage the schema itself, reflect the environment by migrate, and start the editing environment by studio.
 
-### Folders to describe the actual process
+### Folders to describe the actual process (`/node`, `/python`)
 You can call `prisma generate` in each folder.  
-In this case, since the generator to be used is different for each language, it is specified in the environment variable `$PRISMA_CLIENT`.
+In this case, since the generator to be used is different for each language, it is specified in the environment variable `$PRISMA_CLIENT`.  
+The process is described in `update_schema.sh` in each folder.
 
 ## Folders and Files
 ### `/prisma`
