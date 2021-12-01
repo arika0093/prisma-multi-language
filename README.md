@@ -1,6 +1,12 @@
 # Call prisma schema in multiple languages 
 This is a sample of using prisma schema in multiple programming languages.
 
+## demand
+For example, the following case is envisioned:  
+The web server functions will be handled by nodejs, and the batch processing from the database will be done once a day, with pyhton handling the aggregation work.  
+In this case, `prisma-client-js` is used to connect from node, and `prisma-client-py` is used to connect from python.  
+Wouldn't you be happy if you could share your schema in these cases?  
+
 ## Concept
 ### Folders for schema management
 This folder is used to manage the schema itself, reflect the environment by migrate, and start the editing environment by studio.
