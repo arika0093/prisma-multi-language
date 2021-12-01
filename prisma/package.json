@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "migrate": "prisma migrate dev",
+    "migrate": "export PRISMA_CLIENT=prisma-client-js; prisma migrate dev",
     "studio": "prisma studio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

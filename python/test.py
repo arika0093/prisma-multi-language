@@ -1,5 +1,4 @@
 import asyncio
-from numpy import where
 from prisma import Client
 
 async def main() -> None:
@@ -8,13 +7,16 @@ async def main() -> None:
 
     # write your queries here
     user = await client.user.find_first(
-        where = {
-            'name': 'John Doe'
+        include = {
+            'posts': True
         }
     )
     
-    for p in user.posts:
-        print(p.title)
+    if user is None:
+        print('No user found')
+    else:
+        for p in user.posts:
+            print(p.title)
     
     await client.disconnect()
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "schema_generate": "export PRISMA_CLIENT=prisma_client_py; npx prisma generate --schema=../prisma/schema.prisma",
+    "update_schema": "sh update_schema.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

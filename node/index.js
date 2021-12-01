@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+const {PrismaClient} = require('@prisma/client')
 const prisma = new PrismaClient();
 
 (async () => {
@@ -7,8 +7,13 @@ const prisma = new PrismaClient();
 			"posts": true
 		}
 	})
-	const titles = user.posts?.map(p => p.title)
-	
+	const titles = user?.posts?.map(p => p.title)
+
+	if(titles && titles.length > 0) {
+		console.log(titles)	
+	} else {
+		console.log("No posts found")	
+	}
 
 	return true
 })();

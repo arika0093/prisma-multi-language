@@ -18,9 +18,9 @@ Mainly in this folder, we will edit the schema itself and `migrate`.
 
 We will do setup with the following command.
 ```
-cd . /prisma
+cd ./prisma
 npm install
-npx prisma migrate dev
+npm run migrate
 ```
 
 ### `/node`
