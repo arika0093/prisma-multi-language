@@ -1,0 +1,17 @@
+{
+  "name": "prisma_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "schema_generate": "export PRISMA_CLIENT=prisma_client_py; npx prisma generate --schema=../prisma/schema.prisma",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.6.0",
+    "prisma": "^3.6.0"
+  }
+}

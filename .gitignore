@@ -1,0 +1,5 @@
+package-lock.json
+Pipfile.lock
+db.sqlite*
+node_modules/
+.venv/

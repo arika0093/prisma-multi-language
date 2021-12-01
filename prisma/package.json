@@ -1,0 +1,18 @@
+{
+  "name": "prisma_db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prisma": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "migrate": "prisma migrate dev",
+    "studio": "prisma studio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
